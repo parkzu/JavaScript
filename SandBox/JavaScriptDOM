@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <div id="root"></div>
+    <script>
+      const rootElement = document.getElementById("root");
+      // const elementV = document.createElement("h1"); //바닐라
+      const element = React.createElement("h1", { children: "hello, world!" }); //props "h1",null,"Hello, world!"와 같음
+      // element.textContent = "Hello, world!";
+      console.log(element);
+      // console.log(elementV);
+      ReactDOM.render(element, rootElement); //앞에 주입 뒤에가 root
+      // rootElement.appendChild(element);
+    </script>
+  </body>
+</html>
