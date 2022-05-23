@@ -18,7 +18,7 @@
       console.log(element);
       // console.log(elementV);
       ReactDOM.render(element, rootElement); //앞에 주입 뒤에가 root
-      // rootElement.appendChild(element);
+      // rootElement.appendChild(element); 
     </script>
   </body>
 </html>
