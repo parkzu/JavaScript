@@ -7,6 +7,6 @@
       const element = document.createElement("h1");
       rootElement.appendChild(element);
       element.textContent = "Hello, world!";
-    </script>
+    </script> 
   </body>
 </html>
