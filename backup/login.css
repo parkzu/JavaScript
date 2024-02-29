@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to top, #a6c1ee 0%, #61a3f3ef 100%);
+  font-family: 'Noto Sans KR', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.login-form {
+    background-color: #ffffff;
+    width: 1000px;
+    /* height: 521px; */
+    display: block;
+    border-radius: 10px 10px 10px 10px;
+    margin: 200px auto 360px auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: #F4F4FF;  
+  }
+
+#navbar-brand{
+  text-decoration: none;
+  text-align: center;
+  margin-top: 30%;
+}
+
+.links {
+  padding-top: 5%;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.links2 {
+  text-align: center;
+  padding-left: 10%;
+}
+
+.a {
+  font-size: 13px;
+  color: #43B7FB;
+  text-decoration: none;
+  font-weight: 500;
+  user-select: none;
+
+}
+
+.a1 {
+  font-size: 20px;
+  color: #43B7FB;
+  text-decoration: none;
+  padding-right: 50%;
+  font-weight: 500;
+  user-select: none;
+}
+
+.a2 {
+  font-size: 12px;
+  color: #43B7FB;
+  text-decoration: none;
+  padding-bottom: 10%;
+  padding-left: 47%;
+  user-select: none;
+}
+
+.a3 {
+  font-size: 15px;
+  color: #43B7FB;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 3px 40px 4px 40px;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  user-select: none;
+}
+
+.logbtn{
+  padding-right: 17%;
+  padding-bottom: 10%;
+}
+
+hr {
+  border: 0px;
+  width: 100%;
+  height: 1px;
+  background-color: #43B7FB;
+}
+
+.log{
+  padding-top: 110%;
+  padding-right: 20%;
+}
+
+#setfont{
+  padding-top: 5%;
+}
+
+#main{
+  margin-right: 20px;
+  margin-bottom: 30px;
+  font-size: 35px;
+  display: flex;
+}
+
+.left{
+  background-color: #ffffff;
+  border-radius: 10px 30% 0% 10px;
+  box-shadow: 10px 0 5px -4px rgba(50, 50, 93, 0.1);
+  float: left;
+  width: 80%;
+}
+
+.right{
+  float: right;
+  padding-right: 50%;
+}
+
+.menu{
+padding-bottom: 7%;
+}
+
+
+#googlelogo{
+  width: 20%;
+}
+
+#kakaologo{
+  width: 20%;
+}
+
+#applelogo{
+  width: 20%;
+}
+
+#menuimg{
+  padding-top: 40%;
+  padding-left: 180px;
+  width: 180%;
+}
+
+#boatimg{
+  padding-top: 10%;
+  padding-left: 70%;
+}
+
+#team24{
+  padding-left: 170%;
+  width: 260%;
+}
+
+#customBtn {
+  display: inline-block;
+  background: white;
+  color: #444;
+  width: 190px;
+  border-radius: 5px;
+  border: thin solid #888;
+  box-shadow: 1px 1px 1px grey;
+  white-space: nowrap;
+}
+#customBtn:hover {
+  cursor: pointer;
+}
+span.label {
+  font-family: serif;
+  font-weight: normal;
+}
+span.icon {
+  background: url('/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 42px;
+  height: 42px;
+}
+span.buttonText {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 42px;
+  padding-right: 42px;
+  font-size: 14px;
+  font-weight: bold;
+  /* Use the Roboto font that is loaded in the <head> */
+  font-family: 'Roboto', sans-serif;
+}
