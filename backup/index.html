@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>로그인</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" th:href="@{/css/login.css}" href="login.css">
+  <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+  <script>
+    function button_event(){
+      alert("로그인정보가 일치하지 않습니다.")
+    }
+  </script>
+</head>
+<body>
+<div class="login-form">
+  <div id="main">
+      <article class="left">
+          <div class="links">
+          <div id="navbar-brand" class="navbar-brand">
+            <img src="./logoimage.png" id="menuimg">
+            <a class="a">Be with & Join & Create Your Team</a>
+          </div>
+        </div>
+        <div class="links2">
+            <a class="a1">계정 생성하기</a>
+            <hr>
+            <a class="a2">이미 계정이 있으신가요?</a>
+            <a><img src="./google.png" id="googlelogo"></a>
+            <a><img src="./kakaologo.png" id="kakaologo"></a>
+            <a><img src="./applelogo.png" id="applelogo"></a></br>
+            <a class="a3">로그인</a>
+        </div>
+        </article>
+        
+        <article class="right">
+            <img src="./welcomelogo.png" id="welcomeimg">
+            <img src="./boat.png" id="boatimg">
+            <img src="./team24.png" id="team24">
+        </article>
+</div>
+</div>
+</body>
+</html>
