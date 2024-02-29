@@ -24,7 +24,7 @@ body {
 #navbar-brand{
   text-decoration: none;
   text-align: center;
-  margin-top: 30%;
+  margin-top: 5%;
 }
 
 .links {
@@ -34,8 +34,8 @@ body {
 }
 
 .links2 {
+  padding-top: 85%;
   text-align: center;
-  padding-left: 10%;
 }
 
 .a {
@@ -51,8 +51,8 @@ body {
   font-size: 20px;
   color: #43B7FB;
   text-decoration: none;
-  padding-right: 50%;
-  font-weight: 500;
+  padding-right: 40%;
+  font-weight: 550;
   user-select: none;
 }
 
@@ -77,25 +77,11 @@ body {
   user-select: none;
 }
 
-.logbtn{
-  padding-right: 17%;
-  padding-bottom: 10%;
-}
-
 hr {
   border: 0px;
-  width: 100%;
+  width: 70%;
   height: 1px;
   background-color: #43B7FB;
-}
-
-.log{
-  padding-top: 110%;
-  padding-right: 20%;
-}
-
-#setfont{
-  padding-top: 5%;
 }
 
 #main{
@@ -136,52 +122,23 @@ padding-bottom: 7%;
 }
 
 #menuimg{
-  padding-top: 40%;
-  padding-left: 180px;
-  width: 180%;
+  padding-top: 20%;
+  width: 300px;
+}
+
+#welcomeimg{
+  width: 500px;
+  padding-top: 25%;
+  padding-left: 30%;
 }
 
 #boatimg{
+  width: 450px;
   padding-top: 10%;
-  padding-left: 70%;
+  padding-left: 40%;
 }
 
 #team24{
-  padding-left: 170%;
-  width: 260%;
-}
-
-#customBtn {
-  display: inline-block;
-  background: white;
-  color: #444;
-  width: 190px;
-  border-radius: 5px;
-  border: thin solid #888;
-  box-shadow: 1px 1px 1px grey;
-  white-space: nowrap;
-}
-#customBtn:hover {
-  cursor: pointer;
-}
-span.label {
-  font-family: serif;
-  font-weight: normal;
-}
-span.icon {
-  background: url('/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
-  display: inline-block;
-  vertical-align: middle;
-  width: 42px;
-  height: 42px;
-}
-span.buttonText {
-  display: inline-block;
-  vertical-align: middle;
-  padding-left: 42px;
-  padding-right: 42px;
-  font-size: 14px;
-  font-weight: bold;
-  /* Use the Roboto font that is loaded in the <head> */
-  font-family: 'Roboto', sans-serif;
+  padding-left: 100%;
+  width: 140%;
 }
