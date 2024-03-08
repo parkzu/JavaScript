@@ -1,26 +1,55 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-  <title>로그인</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" th:href="@{/css/login.css}" href="login.css">
-  <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
-  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-  <!-- content에 자신의 OAuth2.0 클라이언트ID를 넣습니다. -->
-  <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
-  <meta name ="google-signin-client_id" content="825865067209-p11b52fimqre4amq3pnlmmsmp1si4vok.apps.googleusercontent.com">
-  <meta name="appleid-signin-client-id" content="[CLIENT_ID]">
-  <meta name="appleid-signin-scope" content="[SCOPES]">
-  <meta name="appleid-signin-redirect-uri" content="[REDIRECT_URI]">
-  <meta name="appleid-signin-state" content="[STATE]">
-  <meta name="appleid-signin-use-popup" content="true"> <!-- or false defaults to false -->
-  <script>
-    function button_event(){
-      alert("로그인정보가 일치하지 않습니다.")
-    }
-  </script>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description"
+      content="Web site created using create-react-app"/>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>BOAT 로그인</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/login.css}" href="login.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <!-- content에 자신의 OAuth2.0 클라이언트ID를 넣습니다. -->
+    <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
+    <meta name ="google-signin-client_id" content="825865067209-p11b52fimqre4amq3pnlmmsmp1si4vok.apps.googleusercontent.com">
+    <meta name="appleid-signin-client-id" content="[CLIENT_ID]">
+    <meta name="appleid-signin-scope" content="[SCOPES]">
+    <meta name="appleid-signin-redirect-uri" content="[REDIRECT_URI]">
+    <meta name="appleid-signin-state" content="[STATE]">
+    <meta name="appleid-signin-use-popup" content="true"> <!-- or false defaults to false -->
+  
+  </head>
+  <body>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyA_jLmYKGBlmSaGf4XUyTYzxujScL7QGmI",
+        authDomain: "team24calendar-a36d8.firebaseapp.com",
+        projectId: "team24calendar-a36d8",
+        storageBucket: "team24calendar-a36d8.appspot.com",
+        messagingSenderId: "825865067209",
+        appId: "1:825865067209:web:bf1f7b73be1459423b8b18",
+        measurementId: "G-V3ZGHZYCN4"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+
+<!-- -->
 <div class="login-form">
   <div id="main">
       <article class="left">
@@ -43,12 +72,12 @@
             <a id="kakao-login-btn"></a>
                 </br>
                 <div id="appleid-signin" class="signin-button" data-color="black" data-border="true" data-type="sign in"></div>
-            </br>
             <div class="links">
                     <a class="a3">
-                        로그인
+                        로그인 
                     </a>
                 </div>
+            </br>
         </div>
         </article>
         
@@ -59,61 +88,63 @@
         </article>
 </div>
 </div>
-<script type='text/javascript'> //kakao 로그인
-    //<![CDATA[
-    // 사용할 앱의 JavaScript 키를 설정해 주세요.
-    Kakao.init('26258888f6b0b83585cb057f06026693');
-    // 카카오 로그인 버튼을 생성합니다.
-    Kakao.Auth.createLoginButton({
-        container: '#kakao-login-btn',
-            success: function (authObj) {
-                alert(JSON.stringify(authObj));
-                    },
-            fail: function (err) {
-                alert(JSON.stringify(err));
-                    }
-                });
-            //]]>
-</script>
-
-<script>
-    //처음 실행하는 함수
-    function init() {
-        gapi.load('auth2', function() {
-            gapi.auth2.init();
-            options = new gapi.auth2.SigninOptionsBuilder();
-            options.setPrompt('select_account');
-            // 추가는 Oauth 승인 권한 추가 후 띄어쓰기 기준으로 추가
-            options.setScope('email profile openid https://www.googleapis.com/auth/user.birthday.read');
-            // 인스턴스의 함수 호출 - element에 로그인 기능 추가
-            // GgCustomLogin은 li태그안에 있는 ID, 위에 설정한 options와 아래 성공,실패시 실행하는 함수들
-            gapi.auth2.getAuthInstance().attachClickHandler('GgCustomLogin', options, onSignIn, onSignInFailure);
-        })
-    }
-    
-    function onSignIn(googleUser) {
-        var access_token = googleUser.getAuthResponse().access_token
-        $.ajax({
-            // people api를 이용하여 프로필 및 생년월일에 대한 선택동의후 가져온다.
-            url: 'https://people.googleapis.com/v1/people/me'
-            // key에 자신의 API 키를 넣습니다.
-            , data: {personFields:'birthdays', key:'AIzaSyAgG92yKeJ-s_SRRVlw8j8eXR_wVkyjJGg', 'access_token': access_token}
-            , method:'GET'
-        })
-        .done(function(e){
-            //프로필을 가져온다.
-            var profile = googleUser.getBasicProfile();
-            console.log(profile)
-        })
-        .fail(function(e){
-            console.log(e);
-        })
-    }
-    function onSignInFailure(t){		
-        console.log(t);
-    }
-    </script>
-    <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
-    <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
-</body>
+  <!-- -->
+    <script type='text/javascript'> //kakao 로그인
+      //<![CDATA[
+      // 사용할 앱의 JavaScript 키를 설정해 주세요.
+      Kakao.init('26258888f6b0b83585cb057f06026693');
+      // 카카오 로그인 버튼을 생성합니다.
+      Kakao.Auth.createLoginButton({
+          container: '#kakao-login-btn',
+              success: function (authObj) {
+                  alert(JSON.stringify(authObj));
+                      },
+              fail: function (err) {
+                  alert(JSON.stringify(err));
+                      }
+                  });
+              //]]>
+  </script>
+  
+  <script>
+      //처음 실행하는 함수
+      function init() {
+          gapi.load('auth2', function() {
+              gapi.auth2.init();
+              options = new gapi.auth2.SigninOptionsBuilder();
+              options.setPrompt('select_account');
+              // 추가는 Oauth 승인 권한 추가 후 띄어쓰기 기준으로 추가
+              options.setScope('email profile openid https://www.googleapis.com/auth/user.birthday.read');
+              // 인스턴스의 함수 호출 - element에 로그인 기능 추가
+              // GgCustomLogin은 li태그안에 있는 ID, 위에 설정한 options와 아래 성공,실패시 실행하는 함수들
+              gapi.auth2.getAuthInstance().attachClickHandler('GgCustomLogin', options, onSignIn, onSignInFailure);
+          })
+      }
+      
+      function onSignIn(googleUser) {
+          var access_token = googleUser.getAuthResponse().access_token
+          $.ajax({
+              // people api를 이용하여 프로필 및 생년월일에 대한 선택동의후 가져온다.
+              url: 'https://people.googleapis.com/v1/people/me'
+              // key에 자신의 API 키를 넣습니다.
+              , data: {personFields:'birthdays', key:'AIzaSyAgG92yKeJ-s_SRRVlw8j8eXR_wVkyjJGg', 'access_token': access_token}
+              , method:'GET'
+          })
+          .done(function(e){
+              //프로필을 가져온다.
+              var profile = googleUser.getBasicProfile();
+              console.log(profile)
+          })
+          .fail(function(e){
+              console.log(e);
+          })
+      }
+      function onSignInFailure(t){		
+          console.log(t);
+      }
+      </script>
+      <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
+      <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
+      
+  </body>
 </html>
