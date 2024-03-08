@@ -34,7 +34,7 @@ body {
 }
 
 .links2 {
-  padding-top: 100%;
+  padding-top: 30%;
   text-align: center;
 }
 
@@ -128,12 +128,12 @@ padding-bottom: 7%;
 
 #welcomeimg{
   width: 500px;
-  padding-top: 25%;
+  padding-top: 30%;
   padding-left: 30%;
 }
 
 #boatimg{
-  width: 450px;
+  width: 500px;
   padding-top: 10%;
   padding-left: 40%;
 }
@@ -141,4 +141,11 @@ padding-bottom: 7%;
 #team24{
   padding-left: 100%;
   width: 140%;
+  padding-top: 10%;
+}
+
+#appleid-signin{
+  width: 263px;
+  height: 45px;
+  padding-left: 12%;
 }
