@@ -3,7 +3,8 @@
 <head>
   <title>로그인</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="/src/index.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-width:200px) and (max-width:480px)" href="/src/index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
         <nav id="header">
@@ -23,7 +24,7 @@
                         </ul>
                     </li>
                     <li >
-                        <a>How to Use</a>
+                        <a id="current">How to Use</a>
                         <ul id="list1">
                             <li><a href="#" id="l1">옵션1</a></li>
                             <li><a href="#" id="l1">옵션2</a></li>
@@ -31,7 +32,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a>About us</a>
+                        <a id="current">About us</a>
                         <ul id="list1">
                             <li><a href="#" id="l1">옵션1</a></li>
                             <li><a href="#" id="l1">옵션2</a></li>
@@ -39,7 +40,7 @@
                         </ul>
                     </li>
                     <li>
-                      <a>Support</a>
+                      <a id="current">Support</a>
                       <ul id="list1">
                           <li><a href="#" id="l1">옵션1</a></li>
                           <li><a href="#" id="l1">옵션2</a></li>
@@ -108,13 +109,15 @@
           <div class="footer-top">
             <div class="footer-inner">
               <div class="menu">
-                <a href="#">공지사항</a>|
                 <a href="#">이용약관</a>|
-                <a href="#">개인정보처리방침</a>
+                <a href="#">개인정보처리방침</a>|
+                <a href="#">제휴문의</a>|
+                <a href="#">이용자보호 비전과 계획</a>
               </div>
             </div>
           </div>
           <div class="footer-bottom">
+            <article class="left-list">
             <div class="info">
               명칭 : 
               <b>BOAT</b>
@@ -122,37 +125,24 @@
               소속 :
               <b>Team 24</b>
                 <br />
-                Copyrightⓒ <span class="boat">BOAT</span>. All rights reserved.
-              </span>
+                <hr color="#d1ebfb">
+                역할 : name 　역할 : name<br />
+                역할 : name 　역할 : name<br />
+                역할 : name 　역할 : name
             </div>
+            </article>
+            <article class="right-list">
+              <div class="info">
+                <b>
+                  BOAT 앱 다운로드
+                </b>
+                <br />
+                이미지      
+              <div>
+            </article>
           </div>
         </div>
    </div>
   </footer>
-      <!---->
-<script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyAgG92yKeJ-s_SRRVlw8j8eXR_wVkyjJGg",
-      authDomain: "team24calendar-a36d8.firebaseapp.com",
-      projectId: "team24calendar-a36d8",
-      storageBucket: "team24calendar-a36d8.appspot.com",
-      messagingSenderId: "825865067209",
-      appId: "1:825865067209:web:d46a0cdee952cf353b8b18",
-      measurementId: "G-KG9XWRH0EJ"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  </script>
-
 </body>
 </html>
