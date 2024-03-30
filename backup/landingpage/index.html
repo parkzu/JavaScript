@@ -1,56 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>로그인</title>
+  <title>랜딩페이지</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" media="only screen and (min-width:200px) and (max-width:480px)" href="/src/index.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" type="text/css" href="./mLandingPage.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-        <nav id="header">
-            <div> 
-                <div id="logo">	  
-                    <ul id="dropmenu">
-                        <a id="navbar-brand" href="index.html">
-                            <img src="boat.png" height="50px">
-                            <img src="logoimage.png" height="40px">
-                        </a>
-                    <li>
-                        <a id="current">Download</a>
-                        <ul id="list1">
-                            <li><a href="#" id="l1">옵션1</a></li>
-                            <li><a href="#" id="l1">옵션2</a></li>
-                            <li><a href="#" id="l1">옵션3</a></li>
-                        </ul>
-                    </li>
-                    <li >
-                        <a id="current">How to Use</a>
-                        <ul id="list1">
-                            <li><a href="#" id="l1">옵션1</a></li>
-                            <li><a href="#" id="l1">옵션2</a></li>
-                            <li><a href="#" id="l1">옵션3</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a id="current">About us</a>
-                        <ul id="list1">
-                            <li><a href="#" id="l1">옵션1</a></li>
-                            <li><a href="#" id="l1">옵션2</a></li>
-                            <li><a href="#" id="l1">옵션3</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                      <a id="current">Support</a>
-                      <ul id="list1">
-                          <li><a href="#" id="l1">옵션1</a></li>
-                          <li><a href="#" id="l1">옵션2</a></li>
-                          <li><a href="#" id="l1">옵션3</a></li>
-                      </ul>
-                  </li>
-                </ul>      
-            </div>  
+    <div class="page-header">
+        <a id="logo-icon" class="logo-icon">
+            <img src="./logoimage.png" width="50px">
+        </a>
+        <a id="menu-icon" class="menu-icon" onclick="onMenuClick()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div id="navigation-bar" class="nav-bar">
+          <a class="active"> DownLoad </a>
+          <a> How to Use </a>
+          <a> About us </a>
+          <a> Support </a>
         </div>
-    </nav>
+      </div>
       <hr />     
       <div id="body">
         <section class="main">
@@ -95,7 +68,10 @@
               <img src="./main14.png" width="60%">
             </div>
             <div id="question">
-              <img src="./main15.png" width="60%">
+              <img src="./main16.png" width="60%">
+            </div>
+            <div id="question">
+              <img src="./main17.png" width="60%">
             </div>
           </div>
            </section>
@@ -124,11 +100,6 @@
                 <b class="span">|</b>
               소속 :
               <b>Team 24</b>
-                <br />
-                <hr color="#d1ebfb">
-                역할 : name 　역할 : name<br />
-                역할 : name 　역할 : name<br />
-                역할 : name 　역할 : name
             </div>
             </article>
             <article class="right-list">
@@ -136,13 +107,16 @@
                 <b>
                   BOAT 앱 다운로드
                 </b>
-                <br />
-                이미지      
-              <div>
-            </article>
+              </article>
+              <article class="right-bottom">
+                  <a href="#" class="downloadimg">
+                    <img src="./download.png" width="150px">     
+                  </a>
+              </div>
           </div>
         </div>
    </div>
   </footer>
+  <script src="./index.js"></script>
 </body>
 </html>
