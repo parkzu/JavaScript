@@ -158,7 +158,7 @@ code {
 
 .main{
   width: auto;
-  padding-top: 100px;
+  padding-top: 5%;
   display:flex;
   background-color: #E8F6FF;
   padding-left: 15%;
@@ -166,27 +166,86 @@ code {
 
 .main2{
   width: auto;
-  padding-top: 100px;
+  padding-top: 5%;
   display:flex;
   padding-left: 15%;
 }
 
 #trans{
-  height: 700px;
   text-align: center;
 }
 
 #question{
   transition: height 0.5s;
-  height: 100px;
+  height: 5%;
 }
 
 #question:hover {
   transition: height 0.5s;
-  height: 20%;
+  height: 10%;
 }
 
 /*footer*/
+@media (min-width: 480px) {
+  #footer .menu a{
+    font-size: 0.5rem;
+  }
+
+  #footer .menu{
+    padding-left: 17%;
+  }
+
+  #footer .info{
+    font-size: 0.7rem;
+  }
+  .left-list{
+    float:left;
+    text-align: left;
+    min-width: 350px;
+    padding-left: 25%;
+    display: flex;
+  }
+  .right-list{
+    text-align: left;
+    min-width: 350px;
+    padding-left: 33%;
+    display: flex;
+  }
+  .right-bottom{
+    padding-left: 19%;
+    }
+}
+
+@media (min-width: 1024px) {
+  #footer .menu a{
+    font-size: 1.0rem;
+  }
+
+  #footer .menu{
+    padding-left: 37%;
+  }
+
+  #footer .info{
+    font-size: 1.0rem;
+  }
+  .left-list{
+    float:left;
+    text-align: left;
+    min-width: 350px;
+    padding-left: 42%;
+    display: flex;
+  }
+  .right-list{
+    text-align: left;
+    min-width: 350px;
+    padding-left: 44%;
+    display: flex;
+  }
+  .right-bottom{
+    padding-left: 32%;
+    }
+}
+
 #footer{
   bottom: 0;
 }
@@ -202,7 +261,6 @@ code {
 
 #footer .menu{
   display: flex;
-  padding-left: 37%;
   padding-top: 20px;
   float: left;
   color: #333333;
@@ -226,12 +284,10 @@ code {
 }
 
 #footer .info{
-  padding: 40px;
   background-color: #E8F6FF;
-  height: 150px;
+  height: 1px;
   text-align: center;
   color:#333333;
-  
 }
 
 .span{
@@ -247,13 +303,123 @@ code {
   float:left;
   text-align: left;
   min-width: 350px;
-  padding-left: 20%;
   display: flex;
 }
+
 
 .right-list{
   text-align: left;
   min-width: 350px;
-  padding-left: 30%;
   display: flex;
 }
+
+
+
+.downloadimg{
+  padding-left: 20%;
+}
+
+/* #qa-post{
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 1px;
+} */
+/* #hot-post{
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 1px;
+}
+
+#hot-list a{
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 1px;
+} */
+/* #hot-list ul{
+  padding: 0px;
+}
+
+.hlist{
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(213, 212, 212);
+  padding:10px
+}
+
+#qa-list ul{
+  padding: 0px;
+}
+
+.qlist{
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(213, 212, 212);
+  padding:10px
+} */
+/* #searchmenu{
+  float: right;
+  padding-right: 10px;
+} */
+/* #mypage{
+  text-decoration-line: none;
+  font-size:18px;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-right:20px;
+  color: rgb(185, 185, 185);
+}
+
+#login{
+  text-decoration-line: none;
+  font-size:18px;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-right:20px;
+  color: rgb(185, 185, 185);
+} */
+
+
+/* #searchblank{
+  height:50px;
+  width:100%;
+} */
+/* #body-wrapper{
+  min-height: 100%;
+  position: relative;
+  padding-right:10%;
+  padding-left: 10%;
+}
+#body-content{
+  padding-bottom: 170px;
+} */
+/* .carousel-item{
+  height: 400px;
+  background-size: cover;
+  text-align: center;
+  
+}
+.carousel-item.item1 {
+  background-image: url("https://raw.githubusercontent.com/parkzu/ImageSource/main/mbtilogo.png");
+  background-position: left center;
+}
+
+.carousel-item.item2 {
+ background-image: url("https://raw.githubusercontent.com/parkzu/ImageSource/main/secondtest.png");
+  background-position: center top;
+} */
+
+/* .helper{
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.intro{
+  display: inline-block;
+  vertical-align: bottom;
+  margin-bottom: 60px;
+}
+.intro a{
+  background-color: #5900e7;
+  padding: 10px 30px;
+  border-radius: 2px;
+  font-weight: 300;
+  color: white;
+} */
